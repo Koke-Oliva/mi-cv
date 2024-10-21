@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mí - Jorge Auad Oliva</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <style>
+        .btn-custom {
+            padding: 10px 20px; /* Aumentar el padding */
+            border-radius: 25px; /* Bordes redondeados */
+            font-weight: bold; /* Texto en negrita */
+            transition: background-color 0.3s, transform 0.2s; /* Animación suave */
+        }
+
+        .btn-custom-secondary {
+            background-color: #6c757d; /* Color de fondo para el botón Atrás */
+            border: none; /* Sin borde */
+            color: white; /* Color del texto */
+        }
+
+        .btn-custom-secondary:hover {
+            background-color: #5a6268; /* Color al pasar el mouse */
+            transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+        }
+
+        .btn-custom-primary {
+            background-color: #007bff; /* Color de fondo para el botón Proyectos */
+            border: none; /* Sin borde */
+            color: white; /* Color del texto */
+        }
+
+        .btn-custom-primary:hover {
+            background-color: #0056b3; /* Color al pasar el mouse */
+            transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/mi_foto.jpg" alt="Foto de Jorge Auad Oliva" class="rounded-circle" style="width: 45px; height: 45px; margin-right: 10px;">
+                    Jorge Auad Oliva
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre Mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="experiencia.html">Experiencia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="habilidades.html">Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <div class="text-center">
+            <img src="images/mi_foto.jpg" alt="Foto de Jorge Auad Oliva" class="rounded-circle shadow" style="width: 150px; height: 150px;">
+            <h1 class="display-4 mt-3" style="font-family: 'Roboto', sans-serif;">Sobre Mí</h1>
+            <p class="lead">Ingeniero Estadístico y Desarrollador Full Stack Java Trainee con pasión por la tecnología y el análisis de datos.</p>
+        </div>
+
+        <section class="mt-5">
+            <h2>Mi Historia</h2>
+            <p>¡Hola! Soy <strong>Jorge Auad Oliva</strong>, titulado en <strong>Ingeniería Estadística</strong> en el año 2019 en la Universidad del Bío-Bío. Desde entonces, me he dedicado a perfeccionar mis habilidades en el análisis de datos y el desarrollo de software.</p>
+
+            <h2>Pasión por la Tecnología</h2>
+            <p>Soy un apasionado por las nuevas tecnologías de la información y su capacidad para revolucionar el mundo. Esta pasión me llevó a ampliar mis conocimientos tanto en el desarrollo de software como en el análisis de datos. En 2021, completé un <strong>Diplomado en Data Science y Machine Learning</strong>, y en 2024, terminé un bootcamp en <strong>Desarrollo Full Stack Java</strong>.</p>
+
+            <h2>¿Por Qué Elegirme?</h2>
+            <p>Si estás buscando a alguien que no solo sea técnicamente competente, sino que también aporte pasión, empatía y una fuerte ética de trabajo, entonces creo que soy la persona adecuada. Mi combinación de conocimientos en análisis de datos y desarrollo Full Stack me permite ofrecer una visión integral en los proyectos en los que trabajo.</p>
+        </section>
+
+        <div class="text-center mt-5">
+            <a href="index.html" class="btn btn-custom btn-custom-secondary me-3">Atrás</a>
+            <a href="experiencia.html" class="btn btn-custom btn-custom-primary">Experiencia</a>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p>Contacto:</p>
+            <p>Correo Electrónico: <a href="mailto:jorgeauad.oliva@gmail.com" class="text-white">jorgeauad.oliva@gmail.com</a></p>
+            <p>Teléfono: +56 9 62322188</p>
+            <p>GitHub: <a href="https://github.com/Koke-Oliva" class="text-white">Koke-Oliva</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/jorge-auad-oliva/" class="text-white">Jorge Auad Oliva</a></p>
+            <p>&copy; 2024 Jorge Auad Oliva. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const fadeElements = document.querySelectorAll('.fade-in');
+        fadeElements.forEach(element => {
+            element.classList.add('visible'); // Agrega la clase visible al cargar
+        });
+    });
+</script>
+    
+</body>
+</html>

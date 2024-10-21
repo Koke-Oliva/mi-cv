@@ -1,0 +1,222 @@
+/* Estilos generales y de reinicio */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Cambiamos a Roboto */
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px; /* Aumentar el padding para más espacio */
+    text-align: center;
+    flex: 1;
+}
+
+/* Estilo para el encabezado principal */
+h1 {
+    color: #0056b3; /* Color principal */
+    font-size: 2.5rem; /* Aumentar tamaño de título */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; /* Espaciado inferior */
+    line-height: 1.2; /* Mejora el interlineado */
+}
+
+h2 {
+    color: #0056b3; /* Color principal */
+    font-size: 2rem; /* Aumentar tamaño de h2 */
+    margin: 30px 0 15px; /* Espacio superior e inferior */
+    font-weight: bold; /* Negrita */
+}
+
+h3 {
+    text-align: center; /* Centrar títulos */
+    margin-bottom: 20px; /* Espaciado inferior */
+    font-size: 1.5rem; /* Tamaño de h3 */
+}
+
+h4 {
+    text-align: center; /* Centrar subtítulos */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+    padding: 10px 20px;
+    border-bottom: 1px solid #444;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Imagen de perfil en la barra superior */
+.navbar-brand img {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
+
+/* Imagen grande en la página principal */
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #343a40;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: -75px;
+}
+
+/* Estilo para los párrafos */
+p {
+    font-size: 1.1rem; /* Tamaño de párrafos */
+    line-height: 1.6; /* Mejora el interlineado */
+    margin-bottom: 15px; /* Espacio inferior entre párrafos */
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #343a40; /* Color de fondo del footer */
+    color: #ffffff; /* Color del texto del footer */
+    padding: 20px 0; /* Espaciado interno */
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Alineación de listas */
+ul {
+    list-style-type: none; /* Quitar viñetas */
+    padding: 0; /* Eliminar padding */
+    text-align: center; /* Centrar texto de la lista */
+}
+
+ul li {
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+}
+
+/* Responsividad */
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        justify-content: flex-end;
+    }
+}
+
+.btn-dark {
+    background-color: #0056b3;
+    border-color: #004494;
+    margin-top: 20px;
+    border-radius: 50px; /* Bordes más redondeados */
+    padding: 12px 24px; /* Espacio interno adecuado */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra en los botones */
+    transition: transform 0.2s; /* Transición al pasar el mouse */
+}
+
+.btn-dark:hover {
+    background-color: #004494; /* Color al pasar el mouse */
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+}
+
+.card {
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido esté en columna */
+    height: 100%; /* Permite que la tarjeta ocupe todo el alto */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: box-shadow 0.3s; /* Animación al pasar el mouse */
+}
+
+.card:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el mouse */
+}
+
+.card-body {
+    flex-grow: 1; /* Permite que el cuerpo de la tarjeta crezca para ocupar espacio */
+    display: flex;
+    flex-direction: column; /* Alinear el contenido en columna */
+    justify-content: space-between; /* Espacio entre el contenido y el botón */
+}
+
+.card .btn {
+    margin-top: auto; /* Mueve el botón hacia abajo */
+}
+
+/* Efecto de desvanecimiento para elementos que entran en vista */
+.fade-in {
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.5s ease-in-out; /* Efecto de desvanecimiento */
+}
+
+.fade-in.visible {
+    opacity: 1; /* Se hace visible */
+}
+
+/* Estilo de imágenes en tarjetas */
+.card-img-top {
+    transition: transform 0.3s; /* Transición suave */
+    width: 100%; /* Hacer imágenes responsivas */
+    height: auto; /* Mantener proporciones */
+}
+
+.card-img-top:hover {
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+}
+
+/* Botones personalizados */
+.btn-custom {
+    padding: 10px 20px; /* Aumentar el padding */
+    border-radius: 25px; /* Bordes redondeados */
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s, transform 0.2s; /* Animación suave */
+}
+
+.btn-custom-secondary {
+    background-color: #6c757d; /* Color de fondo para el botón Atrás */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+}
+
+.btn-custom-secondary:hover {
+    background-color: #5a6268; /* Color al pasar el mouse */
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+}
+
+.btn-custom-primary {
+    background-color: #007bff; /* Color de fondo para el botón Ir a Contacto */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+}
+
+.btn-custom-primary:hover {
+    background-color: #0056b3; /* Color al pasar el mouse */
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+}
+

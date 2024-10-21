@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Jorge Auad Oliva</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <style>
+        .btn-custom {
+            padding: 10px 20px; /* Aumentar el padding */
+            border-radius: 25px; /* Bordes redondeados */
+            font-weight: bold; /* Texto en negrita */
+            transition: background-color 0.3s, transform 0.2s; /* Animación suave */
+        }
+
+        .btn-custom-secondary {
+            background-color: #6c757d; /* Color de fondo para el botón Atrás */
+            border: none; /* Sin borde */
+            color: white; /* Color del texto */
+        }
+
+        .btn-custom-secondary:hover {
+            background-color: #5a6268; /* Color al pasar el mouse */
+            transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+        }
+
+        .btn-custom-primary {
+            background-color: #007bff; /* Color de fondo para el botón Ir a Contacto */
+            border: none; /* Sin borde */
+            color: white; /* Color del texto */
+        }
+
+        .btn-custom-primary:hover {
+            background-color: #0056b3; /* Color al pasar el mouse */
+            transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/mi_foto.jpg" alt="Foto de Jorge Auad Oliva" class="rounded-circle" style="width: 30px; height: 30px;">
+                    Jorge Auad Oliva
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre Mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="experiencia.html">Experiencia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="habilidades.html">Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <div class="text-center">
+            <h1 class="display-4" style="font-family: 'Roboto', sans-serif;">Proyectos</h1>
+            <p class="lead">Aquí están algunos de los proyectos en los que he trabajado. ¡Échales un vistazo!</p>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-sm-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/k-means.jpg" class="card-img-top" alt="Imagen del proyecto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">K-means Clustering - Repaso</h5>
+                        <p class="card-text">Este proyecto explora el algoritmo de K-means Clustering utilizando datos simulados. Se aborda la generación de datos, visualización, aplicación del algoritmo, y evaluación de clusters.</p>
+                        <a href="https://github.com/Koke-Oliva/kmeans-clustering-repaso" class="btn btn-dark">Ver en GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/PowerBI.jpg" class="card-img-top" alt="Imagen del proyecto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Análisis de Ventas - Proyecto Power BI</h5>
+                        <p class="card-text">Proyecto desarrollado en Power BI que analiza datos de ventas mediante diversas visualizaciones, importación y transformación de datos.</p>
+                        <a href="https://github.com/Koke-Oliva/analisis-ventas-powerbi" class="btn btn-dark">Ver en GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="images/logoSQLserver.png" class="card-img-top" alt="Imagen del proyecto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Manejo de Queries para la Extracción y Análisis de Datos con SQL Server - PUC Chile</h5>
+                        <p class="card-text">Este proyecto involucra la creación y consulta de una base de datos para un sistema de gestión escolar en SQL Server, centrándose en la extracción y análisis de datos.</p>
+                        <a href="https://github.com/Koke-Oliva/sql-server-gestion-colegio" class="btn btn-dark">Ver en GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <button onclick="window.location.href='habilidades.html'" class="btn btn-custom btn-custom-secondary me-3">Atrás</button>
+            <a href="contacto.html" class="btn btn-custom btn-custom-primary">Contacto</a>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p>Contacto:</p>
+            <p>Correo Electrónico: <a href="mailto:jorgeauad.oliva@gmail.com" class="text-white">jorgeauad.oliva@gmail.com</a></p>
+            <p>Teléfono: +56 9 62322188</p>
+            <p>GitHub: <a href="https://github.com/Koke-Oliva" class="text-white">Koke-Oliva</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/jorge-auad-oliva/" class="text-white">Jorge Auad Oliva</a></p>
+            <p>&copy; 2024 Jorge Auad Oliva. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const fadeElements = document.querySelectorAll('.fade-in');
+        fadeElements.forEach(element => {
+            element.classList.add('visible'); // Agrega la clase visible al cargar
+        });
+    });
+</script>
+    
+</body>
+</html>
